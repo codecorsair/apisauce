@@ -1,36 +1,36 @@
 
 export interface axiosConfig {
-  url: string;
-  method: string;
-  baseURL: string;
-  transformRequest: (data: any) => any;
-  transformResponse: (data: any) => any;
-  headers: any;
-  params: any;
-  paramSerializer: (params: any) => string;
-  data: any;
-  timeout: number;
-  withCredentials: boolean;
-  adapter: (resolve: any, reject: any, config: any) => any;
-  auth: {
-    username: string,
-    password: string
+  url?: string;
+  method?: string;
+  baseURL?: string;
+  transformRequest?: (data?: any) => any;
+  transformResponse?: (data?: any) => any;
+  headers?: any;
+  params?: any;
+  paramSerializer?: (params?: any) => string;
+  data?: any;
+  timeout?: number;
+  withCredentials?: boolean;
+  adapter?: (resolve?: any, reject?: any, config?: any) => any;
+  auth?: {
+    username?: string,
+    password?: string
   };
-  responseType: string;
-  xsrfCookieName: string;
-  xsrfHeadername: string;
-  progress: (progressEvent: any) => any;
-  maxContentLength: number;
-  validateStatus: (status: any) => boolean;
-  maxRedirects: number;
+  responseType?: string;
+  xsrfCookieName?: string;
+  xsrfHeadername?: string;
+  progress?: (progressEvent?: any) => any;
+  maxContentLength?: number;
+  validateStatus?: (status?: any) => boolean;
+  maxRedirects?: number;
 }
 
 export interface axiosResponse {
-  data: any;
-  status: number;
-  statusText: string;
-  headers: any;
-  config: any;
+  data?: any;
+  status?: number;
+  statusText?: string;
+  headers?: any;
+  config?: any;
 }
 
 export interface api {
