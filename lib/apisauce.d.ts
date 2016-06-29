@@ -34,13 +34,13 @@ export interface axiosResponse {
 }
 
 export interface api {
-  get: (url: string, params: any, options: axiosConfig) => any;
-  delete: (url: string, params: any, options: axiosConfig) => any;
-  head: (url: string, params: any, options: axiosConfig) => any;
-  post: (url: string, params: any, options: axiosConfig) => any;
-  call: (url: string, params: any, options: axiosConfig) => any;
-  put: (url: string, params: any, options: axiosConfig) => any;
-  patch: (url: string, params: any, options: axiosConfig) => any;
+  get: (url: string, params?: any, options?: axiosConfig) => any;
+  delete: (url: string, params?: any, options?: axiosConfig) => any;
+  head: (url: string, params?: any, options?: axiosConfig) => any;
+  post: (url: string, params?: any, options?: axiosConfig) => any;
+  call: (url: string, params?: any, options?: axiosConfig) => any;
+  put: (url: string, params?: any, options?: axiosConfig) => any;
+  patch: (url: string, params?: any, options?: axiosConfig) => any;
 }
 
 declare const NONE: string;
